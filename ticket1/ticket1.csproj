@@ -58,6 +58,11 @@
     <Compile Include="comboliste.Designer.cs">
       <DependentUpon>comboliste.cs</DependentUpon>
     </Compile>
+    <Compile Include="filmcombobox.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>filmcombobox.xsd</DependentUpon>
+    </Compile>
     <Compile Include="information.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -99,6 +104,17 @@
     <EmbeddedResource Include="ticketinformation.resx">
       <DependentUpon>ticketinformation.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="filmcombobox.xsc">
+      <DependentUpon>filmcombobox.xsd</DependentUpon>
+    </None>
+    <None Include="filmcombobox.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>filmcombobox.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="filmcombobox.xss">
+      <DependentUpon>filmcombobox.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

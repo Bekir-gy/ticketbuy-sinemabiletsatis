@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ticketinformation));
             this.label1 = new System.Windows.Forms.Label();
             this.koltuk = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -99,6 +100,7 @@
             this.button1.TabIndex = 6;
             this.button1.Text = "SATIN AL";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ticketinformation
             // 
@@ -114,9 +116,11 @@
             this.Controls.Add(this.koltuk);
             this.Controls.Add(this.label1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(5, 4, 5, 4);
             this.Name = "ticketinformation";
             this.Text = "ticketinformation";
+            this.Load += new System.EventHandler(this.ticketinformation_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
